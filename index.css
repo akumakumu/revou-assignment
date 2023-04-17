@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    padding-top: 56px;
+    height: 1000px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    background-color: white;
+    transition: 0.3s;
+    z-index: 99999;
+    box-shadow: 0 3px 15px rgba(66, 76, 81, 0.2);
+}
+
+nav img {
+    height: 40px;
+    transform-origin: 0% 50%;
+    transition: 0.3s;
+}
+
+nav ul li a {
+    color: rgb(97, 94, 94);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li a:hover {
+    color: rgb(97, 94, 94);
+    color: rgb(32, 31, 31);
+    font-size: 18px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.container {
+    margin: 0 10%;
+    width: 80%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home {
+    padding-top: 7px;
+    background-color: rgb(251,252,213);
+}
+
+.content1 {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.content1 img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+#facility {
+    padding-top: 7px;
+    background-color: rgb(237,213,245);
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item-img {
+    padding: 10px;
+}
+
+.grid-item-img img {
+    width: 65%;
+    height: 35vh;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.cards {
+    text-align: center;
+}
+
+#mesgus {
+    padding: 7px;
+    background-color: rgb(253,226,209);
+    height: 100vh;
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+
+.grid-item-2 {
+    padding: 20px;
+}
+
+.grid-item-2-element {
+    background-color: rgb(251,252,213);
+    border-radius: 10px;
+    height: 40vh;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    width: 500px;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: 30% 5% 65%;
+    width: 100%;
+}
+
+.grid-form-item {
+    margin-bottom: 10px;
+}
+
+.grid-form-item-time {
+    margin-bottom: 20px;
+}
+
+
+.form-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-button button
+{
+    width: 30%;
+    height: 25px;
+}
+
+.footer {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding : 2% 10% 2% 2%;
+    text-align: right;
+}
+
+/* Mobile */
+@media screen and (max-width: 800px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .grid-container-2 {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+    #facility {
+        padding-top: 7px;
+        background-color: rgb(237,213,245);
+        height: 150vh;
+    }
+}
