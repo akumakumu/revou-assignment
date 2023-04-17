@@ -88,7 +88,7 @@
                 <div class="grid-container-2">
                     <div class="grid-item-2">
                         <div class="grid-item-2-element">
-                            <form action="">
+                            <form action="" id="form-message" name="form-message" onsubmit="return validateForm()">
                                 <div class="grid-form">
                                     <div class="grid-form-item">
                                         Nama
@@ -99,7 +99,7 @@
                                     </div>
     
                                     <div class="grid-form-item">
-                                        <input type="text">
+                                        <input type="text" id="form-nama">
                                     </div>
     
                                     <div class="grid-form-item">
@@ -111,7 +111,7 @@
                                     </div>
     
                                     <div class="grid-form-item">
-                                        <input type="date" name="" id="">
+                                        <input type="date" name="" id="form-tanggal">
                                     </div>
     
                                     <div class="grid-form-item">
@@ -123,10 +123,10 @@
                                     </div>
     
                                     <div class="grid-form-item">
-                                        <input class="radio-gender" type="radio" id="laki" name="gender" value="male">
-                                        <label for="laki">Laki-Laki</label>
-                                        <input class="radio-gender" type="radio" id="perempuan" name="gender" value="female">
-                                        <label for="laki">Perempuan</label>
+                                        <input class="radio-gender" type="radio" id="male" name="form-gender" value="male">
+                                        <label for="male">Laki-Laki</label>
+                                        <input class="radio-gender" type="radio" id="female" name="form-gender" value="female">
+                                        <label for="female">Perempuan</label>
                                     </div>
     
                                     <div class="grid-form-item">
@@ -138,11 +138,11 @@
                                     </div>
     
                                     <div class="grid-form-item">
-                                        <input type="text">
+                                        <input type="text" class="form-textbox" id="form-pesan">
                                     </div>
                                 </div>
                                 <div class="form-button">
-                                    <button type="submit">Submit</button>
+                                    <input class= "form-submit" type="submit" value="Submit">
                                 </div>
                             </form>
                         </div>
@@ -159,7 +159,7 @@
                                 </div>
 
                                 <div class="grid-form-item">
-                                    <span></span>
+                                    <span id="output-date"></span>
                                 </div>
 
                                 <div class="grid-form-item">
@@ -171,7 +171,7 @@
                                 </div>
 
                                 <div class="grid-form-item">
-                                    <span></span>
+                                    <span id="output-nama"></span>
                                 </div>
 
                                 <div class="grid-form-item">
@@ -183,7 +183,7 @@
                                 </div>
 
                                 <div class="grid-form-item">
-                                    <span></span>
+                                    <span id="output-tanggal"></span>
                                 </div>
 
                                 <div class="grid-form-item">
@@ -195,7 +195,7 @@
                                 </div>
 
                                 <div class="grid-form-item">
-                                    <span></span>
+                                    <span id="output-gender"></span>
                                 </div>
 
                                 <div class="grid-form-item">
@@ -207,7 +207,7 @@
                                 </div>
 
                                 <div class="grid-form-item">
-                                    <span></span>
+                                    <span id="output-pesan"></span>
                                 </div>
                             </div>
                         </div>

@@ -158,13 +158,26 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.grid-form-item input {
+    width: 100%;
+}
+
+.grid-form-item .radio-gender {
+    width: 5%;
+}
+
+.form-textbox {
+    width: 100%;
+    height: 10vh;
+    text-align: start;
+}
 
 .form-button {
     margin-top: 20px;
     text-align: center;
 }
 
-.form-button button
+.form-button .form-submit
 {
     width: 30%;
     height: 25px;
